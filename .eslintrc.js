@@ -23,9 +23,13 @@ module.exports = {
 		tsconfigRootDir: __dirname,
 	},
 	"plugins": [
+		"@typescript-eslint",
+		"import",
+		"jsx-a11y",
 		"react",
-		"@typescript-eslint"
+		"react-hooks",
 	],
+	root: true,
 	"rules": {
 		"indent": [
 			"error",
