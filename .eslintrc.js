@@ -3,14 +3,19 @@ module.exports = {
 		"browser": true,
 		"es2021": true
 	},
-	"extends": [
+	extends: [
+    "eslint:recommended",
 		"airbnb",
 		"airbnb/hooks",
 		"plugin:import/errors",
 		"plugin:import/warnings",
-		"plugin:import/typescript",
+    "plugin:import/typescript",
+    "plugin:@typescript-eslint/eslint-recommended",
 		"plugin:@typescript-eslint/recommended",
-		"plugin:@typescript-eslint/recommended-requiring-type-checking",
+    "plugin:@typescript-eslint/recommended-requiring-type-checking",
+    "prettier",
+    "prettier/@typescript-eslint",
+    "prettier/react",
 	],
 	"parser": "@typescript-eslint/parser",
 	"parserOptions": {
